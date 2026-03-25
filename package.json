@@ -1,0 +1,10 @@
+{
+  "name": "golf-charity-platform-root",
+  "version": "1.0.0",
+  "description": "Root package.json for monolithic public deployment",
+  "scripts": {
+    "postinstall": "cd backend && npm install && cd ../frontend && npm install --include=dev",
+    "build": "cd frontend && npm run build",
+    "start": "cd backend && node server.js"
+  }
+}
